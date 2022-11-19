@@ -1,0 +1,25 @@
+Developed by Guido Van Rossum in 1991
+
+Indentation(means space): 
+
+colon (:) we mostly use this
+
+Functions
+
+Contents 
+
+	Primitives		- Numbers, Strings, Booleans
+
+	Collection		- lists, Dictionaries, Sets
+
+	Control Statements	- if & else, loops, etc
+
+	Range, in, output, input, Tuples
+
+Python Execution:
+
+src ---> Compiler ---> Byte code ---> Virtual  
+
+
+
+
