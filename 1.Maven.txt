@@ -1,0 +1,147 @@
+
+Maven :
+
+	It is a Dev-Ops tool
+	
+	Dev - Development
+
+	Ops - Operation
+
+	
+Features :
+
+	It helps to Maintain Folder Structure
+
+	Manage Dependencies
+
+	Can build Code for Us.
+
+
+Previous : Ant --------> Maven-----------> GRADLE
+
+
+Steps to Create a Maven Project :
+
+Step 2 : File --> New ---> Project
+
+Step 3 : Expand Maven ---> Choose Maven Project ---> Click Next Btn ---> Again Click Next
+
+		Group Id :	org.apache.maven.archetypes
+
+		Artifact Id :	maven- archetype-quickstart
+
+		Version :		1.1 or 1.4
+
+		Click Next
+
+Maven Project :
+
+		Group id : com/org
+
+		Artifact Id : Project Name
+
+		Click Finish
+
+
+
+Maven Folder Structure :
+
+
+src/main/java : Contains Reusable Methods / Maintain Elements
+
+		BaseClass / Utility Files  -----> Maintain Reusable methods
+
+		POM (Page Object Model) ---> Maintain WebElements for every Page
+
+		Page Object Manager           ---> Maintain POM Class Object
+
+
+
+src/test/java : Runner Class
+
+
+JRE System Libraries : It contains Java Predefined Class Files
+
+
+
+Maven Dependencies : 
+
+		It have the Inbuild J - Unit Jar               
+
+		It shows the list of dependencies added in pom.xml
+
+Flow :
+
+	Remote Repo
+
+		Central Repo ( mvn repository )
+
+				pom.xml ---->		Local Repo ( .m2 )
+
+
+
+
+Steps to resolve some conflicts in .xml file
+
+Way 1 : 
+	
+	Right Click Inside the pom.xml / pom.xml / Project
+
+	Maven -----> Update Project
+
+	Click Force Update Check Box
+
+Way 2 :
+
+	Delete the .m2 folder and save the pom.xml
+
+
+How to check Maven in local machine ?  -----> using mvn -version in cmd prompt
+
+Steps to download the Maven :
+
+	Browser ---> Maven download ----> click the first link
+
+	Scroll ----> download the  apache-maven-3.8.6-bin.zip
+
+	Move to c or d 
+
+	Extract the  file
+
+	Window ----> view advanced System Settings
+
+	Click on -----> Environment Variable
+
+	In System Variables choose path
+
+		Edit ----> Paste the Maven bin folder Location
+
+
+
+
+
+src ( source folder ) -----> It shows the main and test folder structure
+
+
+target : Unwanted Jar or some files stored in target folder
+
+pom.xml :
+
+	pom ----> Project Object Model
+
+	xml -----> Extensible Markup Language
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,110 @@
+Dependencies :
+
+	json-simple 		- 1.1.1
+
+	json-schema-validator	- 4.3.3 ( io.restassured )
+
+	xml-path			- 4.3.3 ( io.restassured )
+
+	Rest assured 		- 4.3.3( io.restassured )
+		
+
+
+
+
+
+
+
+1. Retrieve the response status code, Message and response body
+
+Step 1 :
+
+	Create a TestNG Class or Junit Class or Java Class
+
+Step 2 : Add the Base URI
+
+	RestAssured.baseURI = "";
+
+Step 3 :Specify the request by using RestAssured.given()
+
+	RestSpecification request = RestAssured.given();
+
+Step 4 :Use requestSpecification reference name and using CRUD operators
+
+	and pass the parameters and retrieve the response
+
+		Response response = request.get("url");
+
+Step 5 : with the help of response 
+
+
+
+		we retrieve the body ---> getBody() ---> using asString()
+
+		we retrieve the status code ---> getStatusCode()
+
+		we retrieve the line ---> getStatusLine()
+
+
+For Post :
+
+	Response response = request.post("parameter").body;
+
+
+---------------------------------------------------------------------------------------------------------------------
+
+2. Validate the JSON
+
+
+JSON : Java Script Object Notation
+
+	Key and Value Pair
+	
+
+Payload :
+
+	response body in the format of .json
+
+	Create a file and the extension must .json
+
+
+Step 1 : Convert .json into File
+
+	File f = new File(".json location");
+	
+	
+
+Step 2 : Read the data from file by using FileReader( java.io )
+
+	FileReader reader = new FileReader(f);
+
+use json-simple dependencies to use JSONObject
+
+	
+Step 3 : We create a object for JSONParser
+
+	 JSONParser jsoparser = new JSONParser();
+
+
+Step 4 : We pass parse() and pass the parameter as filereader reference
+
+	Object parse = jsonParser.parse(reader); // it will throw ParseException
+
+Step 5 : Convert Object into JSONObject by using narrowingTypeCasting (DownCasting)
+
+	 JSONObject jsonobj =  (JSONObject) parse;
+
+
+
+JSONObject : 
+
+		implements HashMap
+
+		because its unordered and not thread safe
+
+
+Step 6 : If we pass the key in get() we retrieve the value
+
+	and it return type is Object
+
+	Convert the Object to String using toString() method 

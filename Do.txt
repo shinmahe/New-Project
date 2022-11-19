@@ -1,0 +1,7 @@
+6-10
+
+Doubt:
+
+1. how to use System.getProperty("user.dir")
+
+2. ow to give the browser condition in the base class

@@ -1,0 +1,150 @@
+API Testing :
+
+API : Application Programming Interface
+
+
+
+
+
+Terminologies :
+
+HTTP	: Hyper Text Transfer Protocol
+
+HTTPS	: Hyper Text Transfer Protocol Secured
+
+URL	: Uniform Resource Locator
+
+URI	: Uniform Resource Identifier
+
+
+
+
+Parameters :
+
+		Resource / Path Parameters	: It starts with / forward slash
+
+		Query Parameter		: It starts with ?
+
+					Key = Value & Key = Value pair		
+
+
+Ticket  Booking :
+
+Movie Name :
+
+Ticket : 60 Tickets
+
+
+	SERVER(Host)				CLIENT			CLIENT
+
+
+Counter			Spi Website		BookMyShow		TicketNew
+
+17			18, 19			    10			   17
+
+|			  |			     |			    |
+
+|			  |			     |			    |
+
+	DB -----			API		   DB		API	  DB
+
+
+
+
+Authentication & Authorization
+	
+Webservices vs API vs Microservices 
+
+
+
+
+API :
+
+Manual		        : Postman
+
+Automation dependencies : Rest-API / RestAssured
+
+
+
+	   HTTP Request
+Client ---------------------------------> Server
+
+			           |
+
+			           |
+
+Client <--------------------------------------
+
+	HTTP Response
+
+
+
+
+Request -----> HTTP with the help of CRUD Operators
+
+Response ---> in the format of
+
+			xml or .json ( Response Body )
+
+			Response Message 
+
+			Response Status Code
+
+			
+
+Postman :
+
+	We need create a collection to store a multiple requests and folder
+
+
+CRUD Operators 
+
+Operations		Operators
+
+Create 			     POST
+
+Read / Retrieve		     GET
+
+Update			     PUT / PATCH
+
+Delete			     DELETE
+
+
+
+PUT ---> Overall Update
+
+PATCH ---> Particular Update
+
+
+
+1xx : Informational
+
+2xx : Success Oriented
+
+3xx : Redirection
+
+4xx : Client Side Error
+
+5xx : Server Side Error
+
+
+
+
+
+
+
+Ex :
+200 response status code
+
+ok response status message
+
+
+Response Status Code
+
+1xx -----> 
+
+2xx -----> 
+
+
+
+

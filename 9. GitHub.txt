@@ -1,0 +1,234 @@
+
+SCM Tool : Source Code Management Tool : GitHub			Linux Founder ---> Linus Torvalds
+
+Git : Linux
+
+Linux -> Command Prompt
+
+Git -> Based on commands so GitHub also based on commands
+
+
+
+Terminal ( also known as Command Prompt )					IDE
+
+
+Commands Based								
+
+Doesn't have GUI								it  contains GUI
+
+Suggestion :
+	page up & down							ctrl + Spacebar
+
+ctrl_c, ctrl_v operations is not possible						ctrl_c, ctrl_v operations is  possible	
+
+
+Git -----> GitHub -----> BitBucket
+
+
+What are the other tools availabe in market?
+
+To Store the Code in GitHub --- GitHub , GitBash
+
+	Centralize ---> anyone of our team member can view the code and pull the code
+
+Create a account in GitHub Server :
+
+Download the GitBash
+
+How to Download GitBash
+
+
+step 1 :
+
+	Search gitbash download for windows in Chrome
+
+	Click the first link
+
+	Click the windows icon and select the 32 bit 0r 64 as your PC Config
+
+	Check whether its Downloaded or not by Right Click on Window
+
+
+	To run the GitBash we need some Location	
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+GitHub.com
+
+Create an account
+
+Working space/ Tree / Directory
+
+
+
+
+Linux Command In GitBash :
+
+
+to know the current directory -----> 	pwd -----> Present Working Directory 	
+
+to switch to specific directory ------>	cd     -----> Changing the Directory into particular location 
+
+to create a new file to the directory ----->	touch filename.format ---> create a new file
+
+to list out the all files it the directory	ls ----->  List out all the files in that directory
+
+rm filename.format -----> remove that file in directory
+
+cat filename.format -----> List out the contents in that file
+
+
+
+
+Push : To store our values in GitHub
+
+Workspace ---> Local Repo ---> Remote Repo
+
+Pull : To retrieve the code from the GitHub
+
+Remote Repo ---> Workspace
+
+
+WorkFlow :
+
+Untracked Files / Unstagging Area		Tracked File / Stagging Area			Remote File
+
+Workspace					.git				Server
+
+		----> add -------------------->	                      	-------> Commit ----------------->
+
+
+
+					PUSH
+------------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+					PULL
+<--------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+					CLONE ( In different location )
+<---------------------------------------------------------------------------------------------------------------------------------------
+
+
+While Pulling our own datas are override 
+
+So we mostly use Clone. Using clone we can't able to do in same place. so using cd command we redirect to different location 
+
+
+
+
+Git commands :
+
+
+for check  the version of Git :			git --version	
+
+
+
+for configuration :				git config --global user.email
+
+					git config --global user.name
+
+
+for create a local repo				git init
+
+
+
+to know the status				git status
+
+
+
+add a particular file				git add filename.format
+
+
+
+add all the file 				git add .
+
+
+
+list out all the files in .git			git ls-files
+
+
+
+remove the files from .git			git rm --cached filename.format
+
+( unstage )
+
+
+
+
+for add the commit message			git commit -m'' our message''
+
+
+
+
+for show the details of commit message		git log
+
+					HEAD  ---> recent commit
+
+to merge the branch 				git merge
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Push the code via Eclipse IDE
+
+Right click on project -----> Team ------> Share Project ---> Create Local Repo
+
+Project Right Click ---> Show in ---> Git Repositories ---> choose our local repo ---> 
+
+
+
+
+
+Interview Questions :
+
+	git push vs pull
+
+	git init vs add
+
+	git clone vs pull
+
+	git merge vs rebase
+
+	git reset
+
+	branch
+
+	unstaging area vs stagging area
+
+	fetch vs clone
+
+	HEAD 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

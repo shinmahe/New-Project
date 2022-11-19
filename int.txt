@@ -1,0 +1,35 @@
+whatkind of test cases id should you use?
+
+who is create xml file?'
+
+whats are the test cases used in sign in and sign out?
+
+How do you report the bug yo
+
+test cases role in automation
+
+load test
+
+*implicit (dynamic waits)
+
+what is implicit(multiple elements)
+what s explicit(single elements)
+
+verification, validation
+
+sandBox
+
+how do estimate the how long to take to finidh testcases?
+
+code review meeting what we do ?
+
+what is the common bug to review th code ?
+
+
+what are the lead role toQALead ?
+
+what is pom ?
+
+flutter
+
+*explicit

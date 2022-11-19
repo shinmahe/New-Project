@@ -1,0 +1,137 @@
+					 	Cucumber
+
+* It is an advanced Automation Framework
+
+*  Works under BDD techniques
+
+* BDD - Behaviour Driven Development
+
+* BDD -- 
+
+	Describe Behaviour
+
+	Write Step Definition
+
+	Run and Fail
+
+	write the code to make step pass
+
+	Run and Pass
+
+* Imp things 
+
+	Feature File
+
+	Step Definition
+
+	Runner Class / Test Class
+
+
+Cucumber Installation :
+
+* Install Natural 0.9 or Cucumber Eclipse Plugin at market place
+
+* And add Dependencies in pom.xml
+
+	Cucumber Java   (io.cucumber) - 7.0.0
+	Cucumber Junit  (io.cucumber) - 7.0.0
+	Cucumber core    (io.cucumber) - 7.0.0
+
+
+Feature File: 
+
+	---> Gherkin Language ( Plain English Language )
+
+		KeyWords:
+
+			Feature
+
+			Scenario
+
+			Given
+
+			When
+
+			And
+
+			Then
+
+			But
+
+
+
+For Adactin:
+
+Feature File be like this :
+
+		Feature: Validate a hotel booking functionality in Adactin hotel application
+		// Overall Functionality
+
+		Scenario: login page
+		// Particular Functionality for each Module
+		
+		Given user Launch the Adactin Url
+		// Pre - Condition
+
+		When enter username in username field
+		// Action
+
+		And enter the password in the password field
+		// Additional Action  
+
+		Then user click the login Button and it navigate to search hotel page	
+		// Validation
+
+		But
+		// For Negative Purpose / Negative Validation 	
+
+
+
+StepDefinition :
+
+	--->Add  Snippets 
+
+		It will generate in the console
+
+
+
+Runner Class / Test Runner:
+
+	@Runwith(Cucumber.class)
+	// J-Unit Annotation
+
+	@CucumberOptions(features = "Path of Feature File", 
+				glue = "Package name of StepDefinition"
+				
+				monochrome = true,
+
+				dryRun = false, ---> // check feature file and step def before running
+
+				publish = true, --->  // check feature file and step def during actual running
+
+				plugin = { "html:Report/rep.html", ---> To Generate Report Using this Option
+
+				"pretty",
+
+				},
+
+				tags = "@Ad2" ---> // To Generate Snippet 
+
+)
+
+	
+
+	public static WebDriver driver;
+	@BeforeClass
+	public static void start() {
+
+		driver = Base_Class.browserLaunch("chrome");
+
+	}
+
+	@AfterClass
+	public static void end() {
+
+		driver.close();
+
+	}

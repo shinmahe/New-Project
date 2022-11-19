@@ -1,0 +1,11 @@
+
+POJO : Plain Old Java Object
+
+	
+	it will binding the code and data together a single entity
+
+	Here we use Encapsulation concept
+
+	Stored the variables as private in one class and with the help of POJO
+
+	we generate getters and setters to retrieve the private variables in another class

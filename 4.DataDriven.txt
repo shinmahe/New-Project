@@ -1,0 +1,44 @@
+					DataDriven
+
+
+	Excel :
+
+		WorkBook ( I )
+
+			HSSFWorkbook() ---> Before MS.Office 2003
+
+			XSSFWorkbook()  ---> After 2007
+
+
+Program Flow:
+
+	File ( C ) ---> FileInputStream ( C ) ---> WorkBook ( I ) --->  Sheet ( I ) ---> Row ( I ) ---> Cell ( I ) ---> CellType ( E ) ---> CellValue
+
+
+Workbook ( Interface ) :
+
+	A Workbook represents a Microsoft Excel file 
+	used for creating and maintaining the SpreadSheet.
+
+	A Workbook contains many Sheets
+
+	It has Two types:
+
+		HSSFWorkbook ( Class ) ---> Horrible SpreadSheet Format
+
+					Used to read / write the data to Microsoft Excel file in .xls Format
+					MS - Office Versions 97 - 2003
+
+		XSSFWorkbook( Class ) ---> XML SpreadSheet Format
+
+					Used to read / write the data to Microsoft Excel file in .xls or .xlsx Format
+					MS - Office Versions 2007 or later
+
+
+		Syntax:
+			Workbook wb = new XSSFWorkbook();
+
+
+
+
+		

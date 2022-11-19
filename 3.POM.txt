@@ -1,0 +1,72 @@
+
+
+POM : Page Object Model
+
+
+
+Design Pattern :
+
+		POM
+
+		Singleton Design Pattern
+
+		Factory Design Pattern	( logger )
+
+
+
+
+
+POM : Page Object Model
+
+			It is a Design Pattern
+
+			We collect all the WebElements for each and every page and stored in a separate class
+
+			and make it as private
+
+			with the help of @FindBy annotations and atributes
+
+				@FindBy(attributeName = "value")
+
+				private WebElement signin_Btn
+
+			Implement the POJO and generate getters for the WebElement
+
+				public WebElement getSignin_Btn()
+
+				{
+
+					return signin_Btn;
+
+				}
+
+
+		Create a WebDriver instance in POM Class
+
+			public Webdriver driver;
+
+		Create a object for POM Class and pass the parameter as Driver reference
+
+			My_Store store = new My_Store(driver); //  driver -----> Runner Class Driver
+
+		and it will create a parameterized constructor (WebDriver driver2)
+
+
+		public MyStore(WebDriver driver2){
+
+			this .driver = driver2;
+
+			PageFactory .initElements(driver,this);
+
+
+
+
+		}
+
+
+
+		with the help of PageFactory we use initElements method to initialize the WebElements 
+
+		PageFactory ----> Class
+
+

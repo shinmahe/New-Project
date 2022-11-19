@@ -1,0 +1,151 @@
+Single Ton Design Pattern ( STDP ) :
+
+
+Step 1 : 
+
+.properties File
+
+		Key = Value
+
+		It will always consider as String
+
+		Here we are using Map Interface and HashTable Class
+
+		In .properties file does not allow even a single null Value
+
+		In .properties file we use # to command the line	
+
+
+
+Steps to Create a property file :
+
+1. Right Click on Package	---> New		---> File				.properties
+
+2. Right Click on Package	---> New	---> others --->Expand General and choose File	.properties
+
+
+
+
+Step 2 : To read data from .properties file by using TestDataReader Class
+
+Create a separate method for each and every data in .properties
+
+			public void getUsername(){}
+
+			public void getPassword(){}
+
+
+2.1 Create a static reference for properties class
+
+			public static properties p;
+
+2.2 Create a Constructor and its visibility level : public
+
+	Inside the Constructor
+
+		public TestData_Reader(){
+
+		File f = new File(".properties location"); // ---> .properties into file
+
+		FileInputStream fis = new FileInputStream(f); // ---> read data from file
+
+		p = new Properties();
+
+		p.load(fis); // ---> Load the File
+
+	}
+
+
+
+2.3 Create a separate method for userName and password
+
+	public String getUsername() throws IOException {
+
+		String userName = p.getProperty("username");  // mention the key username in .properties 
+
+		return userName;
+
+	}
+
+	public String getPassword() throws IOException {
+
+		String password = p.getProperty("key"); // mention the key password in .properties
+
+		return password;
+
+	}
+
+
+3  File_Reader
+
+
+Here we implement Singleton
+
+private Constructor 	-----> restrict to create Object in another Class
+
+static method	 -----> return current Class Object
+
+non static method	-----> return other Class Objects
+
+
+
+3.1 private Constructor
+
+	private File_Reader()
+	{
+
+	}
+
+3.2 Static method and it returns current Class Object
+
+	public static File_Reader getInstanceFR()
+	{
+
+	File_Reader reader = new File_Reader();
+
+	return reader;
+
+	}
+
+	
+
+3.3 non static method
+
+	public TestDataReader getInstanceTD() throws IOException
+	{
+
+	TestDataReader td = new TestDataReader();
+
+	return td;
+
+	}
+
+
+4 In Runner_Class
+
+If we need username
+
+String username = File_Reader.getInstanceFR().getInstanceTD().getUsername();
+
+And it return the value of username in RunnerClass
+
+
+If we need password
+
+String password = File_Reader.getInstanceFR().getInstanceTD().getPassword();
+
+And it return the value of password in RunnerClass
+
+
+
+
+
+
+
+
+
+
+
+
+
+
