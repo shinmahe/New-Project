@@ -1,0 +1,22 @@
+String e[] = s.split(" ");
+
+for(String w : e[]){
+
+System.out.println(w);
+
+}
+
+n              n
+n  n          n
+n     n       n
+n       n     n
+n         n   n
+n           n n
+
+
+
+
+
+
+
+

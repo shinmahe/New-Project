@@ -67,7 +67,7 @@ Linux Command In GitBash :
 
 to know the current directory -----> 	pwd -----> Present Working Directory 	
 
-to switch to specific directory ------>	cd     -----> Changing the Directory into particular location 
+to switch to specific directory ------>	cd     -----> Changing Directory into particular location 
 
 to create a new file to the directory ----->	touch filename.format ---> create a new file
 
@@ -204,31 +204,5 @@ Interview Questions :
 	fetch vs clone
 
 	HEAD 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
